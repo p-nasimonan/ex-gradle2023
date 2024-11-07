@@ -1,7 +1,7 @@
-package jp.ac.uryukyu.ie.tnal;
+package jp.ac.uryukyu.ie.e245719;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 class EnemyTest {
     /**
