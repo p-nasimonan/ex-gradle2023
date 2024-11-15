@@ -84,15 +84,9 @@ public class Enemy {
         return this.dead;
     }
 
-    /**
-     * 敵の生死状態を設定します。
-     * @param dead 敵が死亡している場合はtrue、そうでない場合はfalse
-     */
-    public void setDead(boolean dead) {
-        this.dead = dead;
-    }
 
-    
+
+
     /**
      * Heroへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。

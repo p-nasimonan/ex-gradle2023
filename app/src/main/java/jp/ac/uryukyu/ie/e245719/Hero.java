@@ -91,13 +91,7 @@ public class Hero {
         return dead;
     }
 
-    /**
-     * ヒーローの生死状態を設定します。
-     * @param dead ヒーローが死亡している場合はtrue、そうでない場合はfalse
-     */
-    public void setDead(boolean dead) {
-        this.dead = dead;
-    }
+
     
 
     //==============================================
