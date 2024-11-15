@@ -27,55 +27,72 @@ public class Enemy {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
-    // nameのgetter
-    public String getName(){
+
+    /**
+     * 敵の名前を取得します。
+     * @return 敵の名前
+     */
+    public String getName() {
         return this.name;
     }
 
-    /* nameのsetter
-     * @param name 名前
+    /**
+     * 敵の名前を設定します。
+     * @param name 設定する敵の名前
      */
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-
-    // hitpointのgetter
-    public int getHitPoint(){
+    /**
+     * 敵のHPを取得します。
+     * @return 現在の敵のHP
+     */
+    public int getHitPoint() {
         return this.hitPoint;
     }
 
-    /* nameのsetter
-     * @param hitpoint 
+    /**
+     * 敵のHPを設定します。
+     * @param hitPoint 設定する敵のHP
      */
-    public void setHitPoint(int hitPoint){
+    public void setHitPoint(int hitPoint) {
         this.hitPoint = hitPoint;
     }
 
-
-    // attackのgetter
-    public int getAttack(){
+    /**
+     * 敵の攻撃力を取得します。
+     * @return 現在の敵の攻撃力
+     */
+    public int getAttack() {
         return this.attack;
     }
 
-    /* attackのsetter
-     * @param attack 
+    /**
+     * 敵の攻撃力を設定します。
+     * @param attack 設定する敵の攻撃力
      */
-    public void setAttack(int attack){
+    public void setAttack(int attack) {
         this.attack = attack;
     }
 
-    // nameのdead
-    public boolean isDead(){
+    /**
+     * 敵の生死状態を取得します。
+     * @return trueの場合は敵が死亡、falseの場合は生存
+     */
+    public boolean isDead() {
         return this.dead;
     }
 
-    /* nameのdead
-     * @param dead
+    /**
+     * 敵の生死状態を設定します。
+     * @param dead 敵が死亡している場合はtrue、そうでない場合はfalse
      */
-    public void setDead(boolean dead){
+    public void setDead(boolean dead) {
         this.dead = dead;
     }
+
+    
     /**
      * Heroへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
