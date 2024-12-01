@@ -14,6 +14,11 @@ public class LivingThing {
         System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, hitPoint, attack);
     }
 
+    // 試しにドキュメントに書かれていたtoStringのメソッドを再現してみた。
+    public String defaultToString() {
+        return getClass().getName() + '@' + Integer.toHexString(hashCode());
+    }
+
     public boolean isDead() {
         return this.dead;
     }

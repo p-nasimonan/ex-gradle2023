@@ -3,10 +3,13 @@ import jp.ac.uryukyu.ie.e245719.Hero;
 import jp.ac.uryukyu.ie.e245719.Warrior;
 
 public class Main {
+
     public static void main(String[] args){
         
         Hero hero = new Warrior("戦士", 10, 5);
         System.out.println(hero);
+
+        System.out.println(hero.defaultToString());
         Enemy enemy = new Enemy("スライム", 6, 3);
 
         System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());

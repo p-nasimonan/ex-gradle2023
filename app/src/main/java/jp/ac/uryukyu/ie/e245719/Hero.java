@@ -5,6 +5,7 @@ public class Hero extends LivingThing {
         super(name, hitPoint, attack);
     }
 
+    
     @Override
     public void wounded(int damage) {
         super.wounded(damage);
