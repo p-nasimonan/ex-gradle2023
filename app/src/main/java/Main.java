@@ -1,22 +1,23 @@
 import jp.ac.uryukyu.ie.e245719.Enemy;
-import jp.ac.uryukyu.ie.e245719.Warrior;
 import jp.ac.uryukyu.ie.e245719.Hero;
+import jp.ac.uryukyu.ie.e245719.Warrior;
 
 public class Main {
     public static void main(String[] args){
         
-        Hero warrior = new Warrior("戦士", 10, 5);
+        Hero hero = new Warrior("戦士", 10, 5);
+        System.out.println(hero);
         Enemy enemy = new Enemy("スライム", 6, 3);
 
-        System.out.printf("%s vs. %s\n", warrior.getName(), enemy.getName());
+        System.out.printf("%s vs. %s\n", hero.getName(), enemy.getName());
 
         int turn = 0;
-        while( warrior.isDead() == false && enemy.isDead() == false ){
+        while( hero.isDead() == false && enemy.isDead() == false ){
             turn++;
             System.out.printf("%dターン目開始！\n", turn);
-            //warrior.attackWithWeponSkill(enemy);
-            warrior.attack(enemy);
-            enemy.attack(warrior);
+            //hero.attackWithWeponSkill(enemy);
+            hero.attack(enemy);
+            enemy.attack(hero);
         }
         System.out.println("戦闘終了");
     }
